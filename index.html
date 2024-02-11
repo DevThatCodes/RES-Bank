@@ -11,15 +11,16 @@
 <body>
     <div class="header">
         <h1>SEM Bank</h1>
+        <a>sign in</a><a>sign up</a>
     </div>
-    <p id="NBT">Toggle NavBar</p>
+    <span style="text-align: right; user-select: none; background-color: rgb(122, 232, 255);" id="NBT">Toggle NavBar</span>
     <p id="display">test</p>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script>
         $(document).ready(function(){
+            $("#display").hide();
             $("#NBT").click(function(){
                 $(".header").slideToggle(1000);
-                $("#display").hide();
             })
         });
     </script>

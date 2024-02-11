@@ -5,7 +5,7 @@ html {
 body {
     margin: 0;
     font-family: 'Protest Strike', sans-serif;
-    text-align: center;
+    text-align: right;
 }
 
 h1 {
@@ -14,7 +14,17 @@ h1 {
 }
 
 .header {
+    text-align: center;
     background: rgb(113,113,113);
-    background: linear-gradient(90deg, rgba(113,113,113,1) 0%, rgba(122,233,255,1) 100%); 
+    background: linear-gradient(90deg, rgba(113,113,113,1) 25%, rgba(122,233,255,1) 75%); 
     padding-bottom: 10px;
+}
+
+a {
+    padding: 1px;
+    border-radius: 5px;
+    margin-left: 2px;
+    margin-right: 2px;
+    border: 2px solid black;
+    background-color: white;
 }
