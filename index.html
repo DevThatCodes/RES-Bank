@@ -9,7 +9,7 @@
         </h1>
         <p id="display">test</p>
         <script>
-        let moneyVals = JSON.parse(xhttp.open("GET", "money.json", true));
+        let moneyVals = JSON.parse(JSON.stringify(xhttp.open("GET", "money.json", true)));
         document.getElementById("display").innerHTML = JSON.stringify(moneyVals);
         </script>
     </body>
