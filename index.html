@@ -1,29 +1,29 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap" rel="stylesheet">
-    <link href="CSS/main.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
 </head>
+
 <body>
     <div class="header">
-        <h1>
-            SEM Bank
-        </h1>
+        <h1>SEM Bank</h1>
     </div>
+    <p id="NBT">Toggle NavBar</p>
     <p id="display">test</p>
-    <button type="button" onclick="loadDoc()">CLICK ME</button>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script>
-        function loadDoc() {
-            const xhttp = new XMLHttpRequest();
-            xhttp.onload = function () {
-                document.getElementById("display").innerHTML = this.responseText;
-            }
-            xhttp.open("GET", "money.json", true);
-            xhttp.send();
-        }
+        $(document).ready(function(){
+            $("#NBT").click(function(){
+                $(".header").slideToggle(1000);
+                $("#display").hide();
+            })
+        });
     </script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
