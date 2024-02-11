@@ -7,3 +7,8 @@ body {
 h1 {
     color: blue;
 }
+
+.header {
+    background-color: burlywood;
+    padding-bottom: 10px;
+}
