@@ -17,13 +17,6 @@
     <span style="text-align: right; user-select: none; background-color: rgb(122, 232, 255);" id="NBT">Toggle NavBar</span>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <br><br><br><br><br><br>
-    <form style="text-align: center;" action="SIC.php" method="post">
-        <label>Card number:</label>
-        <input style="width: 16%;" type="number" placeholder="Card number.. eg. 321-654-987" name="Card#"><br><br>
-        <label>VISC (Very Important Security Code):</label>
-        <input style="width: 10%;" type="number" placeholder="VISC.. eg. 123" name="VISC"><br><br>
-        <input type="submit" value="Done!">
-    </form>
     <script>
         $(document).ready(function(){
             $("#NBT").click(function(){
