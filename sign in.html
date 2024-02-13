@@ -11,20 +11,21 @@
 <body>
     <div class="header">
         <h1>SEM Bank</h1>
-        <a href="sign in.html">sign in</a><a>sign up</a>
+        <a href="index.html">home</a>
     </div>
     <span style="text-align: right; user-select: none; background-color: rgb(122, 232, 255);" id="NBT">Toggle NavBar</span>
-    <p id="display">test</p>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <br><br><br><br><br><br>
+    <form style="text-align: center;">
+        <input style="width: 13.5%;" type="number" placeholder="Add card number.. eg. 110-221-193">
+    </form>
     <script>
         $(document).ready(function(){
-            $("#display").hide();
             $("#NBT").click(function(){
                 $(".header").slideToggle(1000);
             })
         });
     </script>
-    <script src="js/main.js"></script>
 </body>
 
 </html>
