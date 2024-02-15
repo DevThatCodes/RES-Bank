@@ -15,18 +15,26 @@
         <a href="index.html">home</a>
     </div>
     <span style="text-align: right; user-select: none; background-color: rgb(122, 232, 255);" id="NBT">Toggle NavBar</span>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <br><br><br><br><br><br>
-    <form style="text-align: center;" action="SIC.php" method="get">
+    <form id="suf" style="text-align: center;" action="SIC.php" method="get">
 
         <label>Card number (Don't include dashes) :</label>
-        <input style="width: 16%;" type="number" placeholder="Card number.. eg. 321-654-987" name="Card#"><br><br>
+        <input style="width: 16%;" type="number" placeholder="Card number.. eg. 321-654-987" name="Card#" id="CN"><br><br>
         <label>VISC (Very Important Security Code) :</label>
-        <input style="width: 10%;" type="number" placeholder="VISC.. eg. 123" name="VISC"><br><br>
-        <input type="submit" value="Done!">
-        
+        <input style="width: 10%;" type="number" placeholder="VISC.. eg. 123" name="VISC" id="VISC"><br><br>
     </form>
+    <button onclick="Done">Done!</button>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script>
+        let VISC = 0;
+        let CN = 0;
+
+        function Done(){
+            VISC = ("#VISC").html();
+            cn = ("#CN").html();
+            ("#suf").hide();
+        }
+
         $(document).ready(function(){
             $("#NBT").click(function(){
                 $(".header").slideToggle(1000);
